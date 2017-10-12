@@ -40,7 +40,6 @@ public class ProduceConsumeWithSynch {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.exit(0);
             }
         });
 
@@ -58,7 +57,7 @@ public class ProduceConsumeWithSynch {
         t1.start();
 
         t1.join();
-        t2.join();
         System.out.println("end of main");
+        System.exit(0);
     }
 }
