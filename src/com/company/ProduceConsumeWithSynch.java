@@ -40,6 +40,7 @@ public class ProduceConsumeWithSynch {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                System.exit(0);
             }
         });
 
